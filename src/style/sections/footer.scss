@@ -1,0 +1,60 @@
+.footer{
+	flex: 0 0 auto;
+	position: relative;
+	background: #fff;
+	padding: 0px 0;
+	&-top{
+		padding: 30px 0;
+		border-bottom: 1px solid #192023;
+	}
+	&-bottom{
+		padding: 20px 0;
+	}
+	&__text{
+		font-size: 12px;
+		line-height: 20px;
+		color: #000;
+		font-weight: 300;
+		text-align: left;
+		span{
+			font-weight: bold;
+		}
+	}
+	&__link{
+		color: #000;
+		&:hover{
+			color: #000;
+			text-decoration: underline;
+		}
+	}
+}
+
+.social{
+	&__list{
+		position: relative;
+		list-style: none;
+		margin-bottom: 0;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__item{
+		vertical-align: top;
+		width: 30px;
+		height: 30px;
+		display: block;
+		float: left;
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		
+	}
+	&__icon{
+		fill: #000;
+		&:hover{
+			fill: #d5131f;
+		}
+	}
+}

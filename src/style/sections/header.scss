@@ -1,0 +1,131 @@
+//DEFAULT STYLE//
+.top-line{
+	position: relative;
+	@include clearfix;
+	padding: 15px 0;
+	&__logo{
+		display: inline-block;
+		@include MQ(sm) {
+			
+		}
+		@include MQ(xs) {
+			display: inline-block;
+			float: none;
+			text-align: center;
+			margin-left: 0;
+			margin-top: 15px;
+			text-align: left;
+		}
+	}
+	&__shop{
+		display: block;
+		font-size: .75em;
+		background: #c32a4b;
+		color: #fff;
+		text-align: center;
+		padding: 10px 15px;
+		border-radius: 30px;
+		margin: 20px 0;
+		box-shadow: 1px 1px 1px rgba(142,27,52,.5);
+		@include MQ(sm) {
+			margin-right: 10px;
+		}
+		@include MQ(xs) {
+			float: none;
+			font-size: 1em;
+			margin-right: 0;
+		}
+		&:hover{
+			color: #fff;
+			background-color: #ff5534;
+			background-image: -webkit-linear-gradient(#ff5534 0,#e4003a 100%);
+			background-image: linear-gradient(#ff5534 0,#e4003a 100%);
+		}
+	}
+}
+
+.header{
+	position: relative;
+	background: #192023;
+	&__title{
+		font-family:'proxima_nova_thextrabold', 'Roboto', sans-serif;
+		font-size: 62px;
+		line-height: 64px;
+		color:#d5131f;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	&__subtitle{
+		font-size: 16px;
+		line-height: 28px;
+		color: #ffffff;
+		text-align: left;
+		margin-bottom: 40px;
+	}
+	&__btn{
+		max-width: 270px;
+		height: 50px;
+		font-size: 14px;
+		line-height: 50px;
+		background: #484f52;
+		color: #fff;
+		font-family: 'proxima_nova_rgbold';
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		margin-bottom: 125px;
+		&:hover{
+			background: #d5131f;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+.nav{
+	margin: 0;
+	padding: 0;
+	align-self: center!important;
+	justify-content: center!important;
+	&__list{
+		position: relative;
+		list-style-type: none;
+		font-size: 0;
+		margin: 0;
+	}
+	&__item{
+		display: inline-block;
+		margin-right: 42px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		font-family: 'proxima_nova_rgbold';
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 30px;
+		color: #fff;
+		text-decoration: none;
+		&-active{
+			color: #d5131f;
+		}
+		&:hover{
+			color: #d5131f;
+			text-decoration: none;
+			text-decoration: none;
+		}
+	}
+}
+
+.header-innner-wrapper{
+	padding: 30px 0 70px 0;
+	@include clearfix;
+	width: 100%;
+	position: relative;
+	background: url(https://fast.ulmart.ru/ns/verstka/microxperts/img/header-img.png)no-repeat top right;
+}
+
+.mob__nav{
+	display: none;
+}

@@ -1,0 +1,36 @@
+.service{
+	&-section{
+		padding: 100px 0;
+		background: #192023;
+	}
+	&__chisel{
+		width: 100%;
+		&:before{
+			left: 250px;
+		}
+	}
+	&-item{
+		position: relative;
+		text-align: left;
+	}
+	&__img{
+		margin-bottom: 30px;
+		img{
+			height: 62px;
+		}
+	}
+	&__link{
+		font-family: 'proxima_nova_rgbold';
+		font-size: 15px;
+		line-height: 22px;
+		color: #fff;
+		&:hover{
+			color: #d5131f;
+			text-decoration: none;
+		}
+		&:focus{
+			color: #d5131f;
+			text-decoration: underline;
+		}
+	}
+}
